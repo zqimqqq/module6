@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main picture "
+    "footer footer";
+    gap: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8)
+    
+}
+.container > div.header {
+    grid-area: header;
+}
+.container > div.main {
+    grid-area: main;
+}
+.container > div.picture {
+    grid-area: picture;
+   
+
+}
+.container > div.footer {
+    grid-area: footer;
+
+}
+.container > div.picture > img {
+    max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   .container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main "
+    "picture picture"
+    "footer footer";
+    gap: 10px;
+   }
+
+}
